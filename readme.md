@@ -86,46 +86,18 @@ Arithmetic operators are used to perform arithmetic operations on numeric data. 
 | -n       | Negation       | Turns n into a negative number   | -(-5);                   | 5            |
 | x . y    | Concatenation  | Puts together x and y            | "PHP" . " ROCKS";10 . 3; | PHP ROCKS103 |
 
-- Assignment Operators
-
-Assignment operators are used to assign values to variables. They can also be used together with arithmetic operators.
-| Operator | Name           | Description                       | Example                          | Output       |
-|----------|----------------|-----------------------------------|----------------------------------|--------------|
-| x = ?    | assignment     | Assigns the value of x to ?       | $x = 5;                          | 5            |
-| x += ?   | addition       | Increments the value of x by ?    | $x = 2;$x += 1;                  | 3            |
-| X -= ?   | subtraction    | Subtracts ? from the value of x   | $x = 3;$x -= 2;                  | 1            |
-| X *=?    | multiplication | Multiplies the value of x ? times | $x = 0;$x *=9;                   | 0            |
-| X /=?    | division       | Quotient of x and ?               | $x = 6;$x /=3;                   | 2            |
-| X %=?    | modulus        | The reminder of dividing x by?    | $x = 3;$x %= 2;                  | 1            |
-| X .=?    | concatenate    | Puts together items               | " $x = ‘Pretty’;$x .= ‘ Cool!’;" | Pretty Cool! |
 
 
-- Comparison operators
-Comparison operators are used to compare values and data types.
-
-| Operator       | Name | Description | Example    | Output  |
-| X == y         | Equal | Compares x and y then returns  true if they are equal                        | 1 == "1";  | True or 1                                        |
+| Operator       | Name                  | Description                                                                  | Example    | Output                                           |
+|----------------|-----------------------|------------------------------------------------------------------------------|------------|--------------------------------------------------|
+| X == y         | Equal                 | Compares x and y then returns  true if they are equal                        | 1 == "1";  | True or 1                                        |
 | X === y        | identical             | Compares both values and data  types.                                        | 1 === "1"; | False or 0. Since 1 is integer and “1” is string |
 | X != y, x <> y | PHP Not equal         | Compares values of x and y. returns  true if the values are not equal        | 2 != 1;    | True or 1                                        |
 | X > y          | Greater than          | Compares values of x and y. returns  true if x is greater than y             | 3 > 1;     | True or 1                                        |
 | X < y          | Less than             | Compares values of x and y. returns  true if x is less than y                | 2 < 1;     | False or 0                                       |
 | X >= y         | Greater than or equal | Compares values of x and y. returns true  if x is greater than or equal to y | 1 >=1      | True or 1                                        |
 | X <= y         | Less than or equal    | Compares values of x and y. returns true  if x is greater than or equal to y | 8 <= 6     | False or 0                                       |
-  
-  
 
-
-- Logical operators
-When working with logical operators, any number greater than or less than zero (0) evaluates to true. Zero (0) evaluates to false.
-| Operator        | Name                  | Description                                                                 | Example               | Output              |
-|-----------------|-----------------------|-----------------------------------------------------------------------------|-----------------------|---------------------|
-| X and y, x && y | And                   | Returns true if both x and y are equal                                      | 1 and 4;True&& False; | True or 1False or 0 |
-| X or y, x || y  | Or                    | Returns true if either x or y is true                                       | 6 or 9;0 || 0;        | True or 1False or 0 |
-| X xor y         | Exclusive or, xor     | Returns true if only x is true or only y is true                            | 1 xor 1;1 xor 0;      | False or 0True or 1 |
-| !x              | Not                   | Returns true if x is false and false if x is true                           | !0;                   | True or 1           |
-| X < y           | Less than             | Compares values of x and y. returns true if x is less than y                | 2 < 1;                | False or 0          |
-| X >= y          | Greater than or equal | Compares values of x and y. returns true if x is greater than or equal to y | 1 >=1                 | True or 1           |
-| X <= y          | Less than or equal    | Compares values of x and y. returns true if x is greater than or equal to y | 8 <= 6                | Fals                |
 
 
 
