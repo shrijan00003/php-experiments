@@ -102,7 +102,7 @@ Assignment operators are used to assign values to variables. They can also be us
 - Comparison operators
 Comparison operators are used to compare values and data types.
 
-| Operator       | Name                  | Description                                                                 | Example    | Output                                           |
+  | Operator       | Name                  | Description                                                                 | Example    | Output                                           |
 |----------------|-----------------------|-----------------------------------------------------------------------------|------------|--------------------------------------------------|
 | X == y         | Equal                 | Compares x and y then returns true if they are equal                        | 1 == "1";  | True or 1                                        |
 | X === y        | identical             | Compares both values and data types.                                        | 1 === "1"; | False or 0. Since 1 is integer and “1” is string |
@@ -110,7 +110,9 @@ Comparison operators are used to compare values and data types.
 | X > y          | Greater than          | Compares values of x and y. returns true if x is greater than y             | 3 > 1;     | True or 1                                        |
 | X < y          | Less than             | Compares values of x and y. returns true if x is less than y                | 2 < 1;     | False or 0                                       |
 | X >= y         | Greater than or equal | Compares values of x and y. returns true if x is greater than or equal to y | 1 >=1      | True or 1                                        |
-| X <= y         | Less than or equal    | Compares values of x and y. returns true if x is greater than or equal to y | 8 <= 6     | Fals                                             |
+| X <= y         | Less than or equal    | Compares values of x and y. returns true if x is greater than or equal to y | 8 <= 6     | False or 0                                       |
+  
+  
 
 
 - Logical operators
