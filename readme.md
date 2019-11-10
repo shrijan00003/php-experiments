@@ -87,6 +87,9 @@ Arithmetic operators are used to perform arithmetic operations on numeric data. 
 | x . y    | Concatenation  | Puts together x and y            | "PHP" . " ROCKS";10 . 3; | PHP ROCKS103 |
 
 
+- Comparison operator
+Comparison operators are used to compare values and data types.
+
 
 | Operator       | Name                  | Description                                                                  | Example    | Output                                           |
 |----------------|-----------------------|------------------------------------------------------------------------------|------------|--------------------------------------------------|
@@ -97,6 +100,22 @@ Arithmetic operators are used to perform arithmetic operations on numeric data. 
 | X < y          | Less than             | Compares values of x and y. returns  true if x is less than y                | 2 < 1;     | False or 0                                       |
 | X >= y         | Greater than or equal | Compares values of x and y. returns true  if x is greater than or equal to y | 1 >=1      | True or 1                                        |
 | X <= y         | Less than or equal    | Compares values of x and y. returns true  if x is greater than or equal to y | 8 <= 6     | False or 0                                       |
+
+
+- Assingment operator
+Assignment operators are used to assign values to variables. They can also be used together with arithmetic operators.
+
+
+
+| Operator | Name           | Description                       | Example                          | Output       |
+|----------|----------------|-----------------------------------|----------------------------------|--------------|
+| x = ?    | assignment     | Assigns the value of x to ?       | $x = 5;                          | 5            |
+| x += ?   | addition       | Increments the value of x by ?    | $x = 2;$x += 1;                  | 3            |
+| X -= ?   | subtraction    | Subtracts ? from the value of x   | $x = 3;$x -= 2;                  | 1            |
+| X *=?    | multiplication | Multiplies the value of x ? times | $x = 0;$x *=9;                   | 0            |
+| X /=?    | division       | Quotient of x and ?               | $x = 6;$x /=3;                   | 2            |
+| X %=?    | modulus        | The reminder of dividing x by?    | $x = 3;$x %= 2;                  | 1            |
+| X .=?    | concatenate    | Puts together items               | " $x = ‘Pretty’;$x .= ‘ Cool!’;" | Pretty Cool! |
 
 
 
