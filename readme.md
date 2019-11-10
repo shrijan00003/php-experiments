@@ -117,6 +117,19 @@ Assignment operators are used to assign values to variables. They can also be us
 | X %=?    | modulus        | The reminder of dividing x by?    | $x = 3;$x %= 2;                  | 1            |
 | X .=?    | concatenate    | Puts together items               | " $x = ‘Pretty’;$x .= ‘ Cool!’;" | Pretty Cool! |
 
+- Logical operator
+When working with logical operators, any number greater than or less than zero (0) evaluates to true. Zero (0) evaluates to false.
+
+| Operator | Name | Description | Example | Output |
+|-----------------|-------------------|---------------------------------------------------|----------------------------------|---------------------|
+| X and y, x && y | And | Returns true if both x and y are equal | 1 and 4;True&& False; | True or 1False or 0 |
+| X or y, x || y | Or | Returns true if either x or y is true | 6 or 9;0 || 0; | True or 1False or 0 |
+| X xor y | Exclusive or, xor | Returns true if only x is true or only y is true | 1 xor 1;1 xor 0; | False or 0True or 1 |
+| !x | Not | Returns true if x is false and false if x is true | !0; | True or 1 |
+| X /=? | division | Quotient of x and ? | $x = 6;$x /=3; | 2 |
+| X %=? | modulus | The reminder of dividing x by? | $x = 3;$x %= 2; | 1 |
+| X .=? | concatenate | Puts together items | " $x = ‘Pretty’;$x .= ‘ Cool!’;" | Pretty Cool! |
+
 
 
 
