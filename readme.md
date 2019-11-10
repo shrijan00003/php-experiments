@@ -23,8 +23,10 @@ The Programming languages for server-side programming are :
 4) Python
 5) Ruby on Rails
 
-https://www.guru99.com/images
-/2013/04/php_app_flowchart.jpg
+![php-flow](https://www.guru99.com/images/2013/04/php_app_flowchart.jpg)
+
+
+
 
 
 
