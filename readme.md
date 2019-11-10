@@ -99,11 +99,12 @@ Assignment operators are used to assign values to variables. They can also be us
 | X %=?    | modulus        | The reminder of dividing x by?    | $x = 3;$x %= 2;                  | 1            |
 | X .=?    | concatenate    | Puts together items               | " $x = ‘Pretty’;$x .= ‘ Cool!’;" | Pretty Cool! |
 
+
 - Comparison operators
 Comparison operators are used to compare values and data types.
 
-| Operator       | Name                  | Description                                                                  | Example    | Output                                           |
-| X == y         | Equal                 | Compares x and y then returns  true if they are equal                        | 1 == "1";  | True or 1                                        |
+| Operator       | Name | Description | Example    | Output  |
+| X == y         | Equal | Compares x and y then returns  true if they are equal                        | 1 == "1";  | True or 1                                        |
 | X === y        | identical             | Compares both values and data  types.                                        | 1 === "1"; | False or 0. Since 1 is integer and “1” is string |
 | X != y, x <> y | PHP Not equal         | Compares values of x and y. returns  true if the values are not equal        | 2 != 1;    | True or 1                                        |
 | X > y          | Greater than          | Compares values of x and y. returns  true if x is greater than y             | 3 > 1;     | True or 1                                        |
