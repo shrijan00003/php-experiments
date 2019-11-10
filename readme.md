@@ -25,6 +25,23 @@ The Programming languages for server-side programming are :
 
 ![php-flow](https://www.guru99.com/images/2013/04/php_app_flowchart.jpg)
 
+## PHP basics
+## PHP data types
+A Data type is the classification of data into a category according to its attributes;
+
+- Alphanumeric characters are classified as strings
+- Whole numbers are classified integers
+- Numbers with decimal points are classified as floating points.
+- True or false values are classified as Boolean.
+
+PHP is a loosely typed language; it does not have explicit defined data types. PHP determines the data types by analyzing the attributes of data supplied. PHP implicitly supports the following data types
+
+- Integer – whole numbers e.g. -3, 0, 69. The maximum value of an integer is platform-dependent. On a 32 bit machine, it’s usually around 2 billion. 64 bit machines usually have larger values. The constant PHP_INT_MAX is used to determine the maximum value.
+- Floating point number – decimal numbers e.g. 3.14. they are also known as double or real numbers.  The maximum value of a float is platform-dependent. Floating point numbers are larger than integers.
+- Character string – e.g. Hello World
+- Boolean – e.g. True or false.
+
+
 
 
 
