@@ -41,6 +41,11 @@ PHP is a loosely typed language; it does not have explicit defined data types. P
 - Character string – e.g. Hello World
 - Boolean – e.g. True or false.
 
+```php
+<?php
+echo PHP_INT_MAX;
+?>
+```
 
 
 
