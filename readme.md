@@ -130,6 +130,135 @@ When working with logical operators, any number greater than or less than zero (
 | X %=? | modulus | The reminder of dividing x by? | $x = 3;$x %= 2; | 1 |
 | X .=? | concatenate | Puts together items | " $x = ‘Pretty’;$x .= ‘ Cool!’;" | Pretty Cool! |
 
+## PHP COMMENTS
+- Comments help us to understand the code
+- Comments are explanations that we include in our source code. These comments are for human understanding.
+- Single line comments start with double forward slashes // and they end in the same line
+- multiline comments 
+```php
+
+<?php 
+/**
+ * @access public
+ * @param $amount
+ * @return $taxAmount
+ */
+    echo "hello world !!"
+?>
+
+```
+## PHP embedding script
+- php code can be embedded directly like 
+  ```
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <?php echo "Hello world !!!" ?>
+    </body>
+    </html>
+   
+   ```
+  This style is always available and is recommended .
+  
+  - we can also embedded PHP with <script> tag 
+
+  ```
+    <script language="php">
+        echo "I am inside script tag"
+    <script>
+  ```
+  
+  - another way to embedded betweed <% and %> tag, this is disabled by default
+  
+  ``` 
+  <% echo "inside another tag" %>
+  
+  ```
+  
+  It is legal to switch back and forth between HTML and PHP at any time. 
+  
+  ```php
+    <?php for($i=0; $i<10; $i++){?>
+        <h1>hello world</h1>
+    <?php } ?>
+  
+  ```
+  > Of course, using the str_repeat() functions here would make more sense.
+  
+  ## PHP Includes & PHP Include_once
+  
+  The “include” php statement is used to include other files into a PHP file.
+  
+  It has two variations, include and include_once.  Include_once is ignored by the PHP interpreter if the file to be included.
+  
+  ```
+  <?php
+include 'file_name';
+?>
+```
+and
+
+```
+<?php
+include_once 'file_name';
+?>
+
+```
+
+read more on http://extrimity.in/content/difference-between-include-vs-includeonce-php
+
+## PHP Require & PHP require_once
+
+The require statement has two variations, require and require_once.
+
+The require/require_once statement is used to include file.
+
+Require_once is ignored if the required file has already been added by any of the four include statements.
+
+It has the following syntax
+```php
+<?php
+require 'file_name';
+?>
+<?php
+require_once 'file_name';
+?>
+```
+HERE,
+
+“require/require_once” is the statement that includes file
+“'file_name'” is the name of the file to be included.
+
+## Php include vs require
+The difference between include / require
+
+Include 
+- Issues a warning when an error occurs	
+- Execution of the script continues when an error occurs	
+
+Require
+- Does not issue a warning
+- Execution of the script stops when an error occurs.
+
+  Generally, it’s recommended using the include statement so that when an error occurs, execution of the script continues to display the webmaster email address or the contact us page.
+
+The require statement should be used if the entire script cannot run without the requested file.
+
+The “include” and “require” statements can be used at any line in the source codes where you want the code to appear.
+
+
+
+
+
+
+  
+
 
 
 
