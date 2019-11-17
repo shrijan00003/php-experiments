@@ -197,14 +197,11 @@ When working with logical operators, any number greater than or less than zero (
   
   It has two variations, include and include_once.  Include_once is ignored by the PHP interpreter if the file to be included.
   
-  ```
+```
   <?php
 include 'file_name';
 ?>
-```
-and
 
-```
 <?php
 include_once 'file_name';
 ?>
