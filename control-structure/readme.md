@@ -372,3 +372,183 @@ A Loop is an Iterative Control Structure that involves executing the same number
 - “initialize” usually an integer; it is used to set the counter’s initial value.
 - “condition” the condition that is evaluated for each php execution. If it evaluates to true then execution of the for... loop is terminated. If it evaluates      to false, the execution of the for... loop continues.
 - “increment” is used to increment the initial value of counter integer.
+
+![php-for-loop](https://www.guru99.com/images/2013/04/loop.png)
+
+example:
+
+```php
+<?php
+
+for ($i = 0; $i < 10; $i++){
+
+$product = 10 * $i;
+
+echo "The product of 10 * $i is $product <br/>";
+}
+
+?>
+```
+
+**PHP For Each loop**
+
+The php foreach loop is used to iterate through array values. It has the following basic syntax
+
+```php
+<?php
+foreach($array_data  as $array_values){
+
+block of code to be executed
+
+}
+?>
+
+```
+
+- “foreach(…){…}” is the foreach php loop block code
+- “$array_data” is the array variable to be looped through
+- “$array_value “ is the temporary variable that holds the current array item values.
+- “block of code…” is the piece of code that operates on the array values
+
+![php-for-each](https://www.guru99.com/images/2013/04/for_loop_flowchart.png)
+
+example
+
+```php
+<?php
+
+$animals_list = array("Lion","Wolf","Dog","Leopard","Tiger");
+
+foreach($animals_list as $array_values){
+
+echo $array_values . "<br>";
+
+}
+
+?>
+
+```
+
+Let’s look at another example that loops through an a**ssociative array**.
+
+An associative array uses alphanumeric words for access keys.
+
+```php
+<?php
+
+$persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+
+foreach($persons as $key => $value){
+
+echo "$key is $value"."<br>";
+
+}
+
+?>
+
+```
+
+Output
+
+```html
+Mary is Female
+John is Male
+Mirriam is Female
+
+```
+
+**While Loop**
+
+They are used to execute a block of code a repeatedly until the set condition gets satisfied
+
+**When to use while loops**
+
+- While loops are used to execute a block of code until a certain condition becomes true.
+- You can use a while loop to read records returned from a database query.
+
+**Types of while loops**
+
+- **Do… while** - executes the block of code at least once before evaluating the condition
+- **While** - checks the condition first. If it evaluates to true, the block of code is executed as long as the condition is true. If it evaluates to false, the execution of the while loop is terminated.
+
+syntax
+
+```php
+<?php
+while (condition){
+
+block of code to be executed;
+
+}
+?>
+```
+
+- “while(…){…}” is the while loop block code
+- “condition” is the condition to be evaluated by the while loop
+- “block of code…” is the code to be executed if the condition gets satisfied
+
+> Draw a flowchart for while loop
+
+```php
+<?php
+
+$i = 0;
+
+while ($i < 5){
+
+echo $i + 1 . "<br>";
+
+$i++;
+
+}
+
+?>
+```
+
+**PHP Do While**
+
+The difference between While… loop and Do… while loop is do… while is executed at-least once before the condition is evaluated.
+
+syntax
+
+```php
+<?php
+do{
+
+// block of code to be executed
+
+}while(condition);
+?>
+```
+
+- “do{…} while(…)” is the do… while loop block code
+- “condition” is the condition to be evaluated by the while loop
+- “block of code…” is the code that is executed at least once by the do… while loop
+
+> Draw a flow chart for Do while loop
+
+example
+
+```php
+
+<?php
+
+$i = 9;
+
+do{
+
+    echo "$i is"." <br>";
+
+}
+
+while($i < 9);
+
+?>
+
+```
+
+
+
+
+
+
