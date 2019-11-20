@@ -192,9 +192,13 @@ Arithmetic operators are used to perform arithmetic operations on numeric data. 
   It is legal to switch back and forth between HTML and PHP at any time.
 
   ```php
-    <?php for($i=0; $i<10; $i++){    ?>
+    <?php
+     for($i=0; $i<10; $i++){   
+        ?>
           <h1>hello world</h1>
-    <?php } ?>
+    <?php 
+    } 
+    ?>
 
   ```
 

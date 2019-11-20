@@ -120,6 +120,7 @@ Let’s now look at an example of a numeric array.
 Suppose we have 5 movies that we want to store in array variables.
 We can use the example shown below to do that.
 
+```php
 <?php
 $movie[0] = 'Shaolin Monk';
 $movie[1] = 'Drunken Master';
@@ -129,6 +130,7 @@ $movie[4] = 'Replacement Killers';
 
 ?>
 
+
 ```php
 
 <?php
@@ -137,9 +139,12 @@ $movie[1]="Drunken Master";
 $movie[2]="American Ninja";
 $movie[3]="Once upon a time in China";
 $movie[4]="Replacement Killers";
-echo $movie[3];
+
+echo $movie[3]; //=> 
+
 $movie[3] = " Eastern Condors";
-echo $movie[3];
+
+echo $movie[3]; //=> 
 ?>
 ```
 
@@ -179,9 +184,17 @@ HERE,
 We can use an associative array to do that.The code below helps us to do that.
 
 ```php
+
 <?php
-$persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+$persons = array(
+    "Mary" => "Female", 
+    "John" => "Male",
+     "Mirriam" => "Female"
+    );
+
 print_r($persons);
+var_dump($persons);
+
 echo "";
 echo "Mary is a " . $persons["Mary"];
 ?>
@@ -190,18 +203,32 @@ echo "Mary is a " . $persons["Mary"];
 ## PHP Multi-dimensional arrays
 
 These are arrays that contain other nested arrays.
+
 The advantage of multidimensional arrays is that they allow us to group related data together.
 
 ```php
+
 <?php
 $movies =array(
-"comedy" => array("Pink Panther", "John English", "See no evil hear no evil"),
-"action" => array("Die Hard", "Expendables"),
-"epic" => array("The Lord of the rings"),
-"Romance" => array("Romeo and Juliet")
+    "comedy" => array(
+        "Pink Panther", 
+        "John English", 
+        "See no evil hear no evil"
+        ),
+    "action" => array(
+        "Die Hard",
+         "Expendables"
+         ),
+    "epic" => array(
+        "The Lord of the rings"
+        ),
+    "Romance" => array(
+        "Romeo and Juliet"
+        )
 );
 print_r($movies);
 ?>
+
 ```
 
 Another way of define array is as follows:
@@ -244,7 +271,7 @@ $film=array(
                                 )
 
 );
-echo $film["comedy"][0];
+echo $film["comedy"][0]; // Pink Panther
 ?>
 ```
 
@@ -329,3 +356,19 @@ print_r($persons);
 ```
 Array ( [Mary] => Female [Mirriam] => Female [John] => Male )
 ```
+
+## PHP loops
+
+A Loop is an Iterative Control Structure that involves executing the same number of code a number of times until a certain condition is met.
+**For loop**
+```php
+<?php
+    for (initialize; condition; increment){
+    //code to be executed
+    }
+?>
+```
+- “for…{…}” is the loop block
+- “initialize” usually an integer; it is used to set the counter’s initial value.
+- “condition” the condition that is evaluated for each php execution. If it evaluates to true then execution of the for... loop is terminated. If it evaluates      to false, the execution of the for... loop continues.
+- “increment” is used to increment the initial value of counter integer.
