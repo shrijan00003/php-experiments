@@ -301,15 +301,19 @@ echo is_array($lecturers);
 Output: 1
 
 **Sort**
-This function is used to sort arrays by the values.
-If the values are alphanumeric, it sorts them in alphabetical order.
+This function is used to sort arrays by the **values**.
+If the values are **alphanumeric**, it sorts them in alphabetical order.
 If the values are numeric, it sorts them in ascending order.
-It removes the existing access keys and add new numeric keys.
+It removes the *existing access keys and add new numeric keys*.
 The output of this function is a numeric array
 
 ```php
 <?php
-$persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+$persons = array(
+    "Mary" => "Female",
+     "John" => "Male", 
+     "Mirriam" => "Female"
+     );
 
 sort($persons);
 
@@ -324,11 +328,15 @@ Array ( [0] => Female [1] => Female [2] => Male )
 ```
 
 **ksort**
-This function is used to sort the array using the key. The following example illustrates its usage.
+This function is used to sort the array using **the key**. The following example illustrates its usage.
 
 ```php
 <?php
-$persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+$persons = array(
+    "Mary" => "Female", 
+    "John" => "Male",
+     "Mirriam" => "Female"
+     );
 
 ksort($persons);
 
@@ -338,13 +346,19 @@ print_r($persons);
 
 Output:
 `Array ( [John] => Male [Mary] => Female [Mirriam] => Female )`
+
 **asort**
-This function is used to sort the array using the values. The following example illustrates its usage.
+
+This function is used to sort the array using the **values**. The following example illustrates its usage.
 
 ```php
 <?php
 
-$persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
+$persons = array(
+    "Mary" => "Female",
+     "John" => "Male",
+      "Mirriam" => "Female"
+      );
 
 asort($persons);
 
@@ -360,7 +374,9 @@ Array ( [Mary] => Female [Mirriam] => Female [John] => Male )
 ## PHP loops
 
 A Loop is an Iterative Control Structure that involves executing the same number of code a number of times until a certain condition is met.
+
 **For loop**
+
 ```php
 <?php
     for (initialize; condition; increment){
@@ -368,6 +384,7 @@ A Loop is an Iterative Control Structure that involves executing the same number
     }
 ?>
 ```
+
 - “for…{…}” is the loop block
 - “initialize” usually an integer; it is used to set the counter’s initial value.
 - “condition” the condition that is evaluated for each php execution. If it evaluates to true then execution of the for... loop is terminated. If it evaluates      to false, the execution of the for... loop continues.
@@ -396,9 +413,9 @@ The php foreach loop is used to iterate through array values. It has the followi
 
 ```php
 <?php
-foreach($array_data  as $array_values){
+foreach($array_name  as $array_value){
 
-block of code to be executed
+ // block of code to be executed
 
 }
 ?>
@@ -417,11 +434,11 @@ example
 ```php
 <?php
 
-$animals_list = array("Lion","Wolf","Dog","Leopard","Tiger");
+$animals = array("Lion","Wolf","Dog","Leopard","Tiger");
 
-foreach($animals_list as $array_values){
+foreach($animals as $animal){
 
-echo $array_values . "<br>";
+echo $animal . "<br>";
 
 }
 
@@ -438,9 +455,9 @@ An associative array uses alphanumeric words for access keys.
 
 $persons = array("Mary" => "Female", "John" => "Male", "Mirriam" => "Female");
 
-foreach($persons as $key => $value){
+foreach($persons as $key => $person){
 
-echo "$key is $value"."<br>";
+    echo "$key is $person"."<br>";
 
 }
 
@@ -477,7 +494,7 @@ syntax
 <?php
 while (condition){
 
-block of code to be executed;
+//block of code to be executed;
 
 }
 ?>

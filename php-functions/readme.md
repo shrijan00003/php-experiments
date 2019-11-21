@@ -32,3 +32,9 @@ PHP string functions are used to manipulate string values.
 | str_word_count | Used to count the number of words in a string.                                                                                                                                                                                                              | echo str_word_count ('This is a really long sentence that I wish to cut short');                      | 12                                                                              |
 | ucfirst        | Make the first character of a string value upper case                                                                                                                                                                                                       | echo ucfirst('respect');                                                                              | Outputs Respect                                                                 |
 | lcfirst        | Make the first character of a string value lower case                                                                                                                                                                                                       | echo lcfirst('RESPECT');                                                                              | Outputs rESPECT                                                                 |
+**Numeric Function**
+
+- Numeric functions are function that return numeric results.
+- Numeric php function can be used to format numbers, return constants, perform mathematical computations etc.
+  
+  
