@@ -120,7 +120,7 @@ Let’s now look at an example of a numeric array.
 Suppose we have 5 movies that we want to store in array variables.
 We can use the example shown below to do that.
 
-```php
+````php
 <?php
 $movie[0] = 'Shaolin Monk';
 $movie[1] = 'Drunken Master';
@@ -140,13 +140,13 @@ $movie[2]="American Ninja";
 $movie[3]="Once upon a time in China";
 $movie[4]="Replacement Killers";
 
-echo $movie[3]; //=> 
+echo $movie[3]; //=>
 
 $movie[3] = " Eastern Condors";
 
-echo $movie[3]; //=> 
+echo $movie[3]; //=>
 ?>
-```
+````
 
 Alternatively, the above array variables can also be created using the following code.
 
@@ -187,7 +187,7 @@ We can use an associative array to do that.The code below helps us to do that.
 
 <?php
 $persons = array(
-    "Mary" => "Female", 
+    "Mary" => "Female",
     "John" => "Male",
      "Mirriam" => "Female"
     );
@@ -211,8 +211,8 @@ The advantage of multidimensional arrays is that they allow us to group related 
 <?php
 $movies =array(
     "comedy" => array(
-        "Pink Panther", 
-        "John English", 
+        "Pink Panther",
+        "John English",
         "See no evil hear no evil"
         ),
     "action" => array(
@@ -304,14 +304,14 @@ Output: 1
 This function is used to sort arrays by the **values**.
 If the values are **alphanumeric**, it sorts them in alphabetical order.
 If the values are numeric, it sorts them in ascending order.
-It removes the *existing access keys and add new numeric keys*.
+It removes the _existing access keys and add new numeric keys_.
 The output of this function is a numeric array
 
 ```php
 <?php
 $persons = array(
     "Mary" => "Female",
-     "John" => "Male", 
+     "John" => "Male",
      "Mirriam" => "Female"
      );
 
@@ -333,7 +333,7 @@ This function is used to sort the array using **the key**. The following example
 ```php
 <?php
 $persons = array(
-    "Mary" => "Female", 
+    "Mary" => "Female",
     "John" => "Male",
      "Mirriam" => "Female"
      );
@@ -387,7 +387,7 @@ A Loop is an Iterative Control Structure that involves executing the same number
 
 - “for…{…}” is the loop block
 - “initialize” usually an integer; it is used to set the counter’s initial value.
-- “condition” the condition that is evaluated for each php execution. If it evaluates to true then execution of the for... loop is terminated. If it evaluates      to false, the execution of the for... loop continues.
+- “condition” the condition that is evaluated for each php execution. If it evaluates to true then execution of the for... loop is terminated. If it evaluates to false, the execution of the for... loop continues.
 - “increment” is used to increment the initial value of counter integer.
 
 ![php-for-loop](https://www.guru99.com/images/2013/04/loop.png)
@@ -423,8 +423,8 @@ foreach($array_name  as $array_value){
 ```
 
 - “foreach(…){…}” is the foreach php loop block code
-- “$array_data” is the array variable to be looped through
-- “$array_value “ is the temporary variable that holds the current array item values.
+- “\$array_data” is the array variable to be looped through
+- “\$array_value “ is the temporary variable that holds the current array item values.
 - “block of code…” is the piece of code that operates on the array values
 
 ![php-for-each](https://www.guru99.com/images/2013/04/for_loop_flowchart.png)
@@ -468,10 +468,7 @@ foreach($persons as $key => $person){
 Output
 
 ```html
-Mary is Female
-John is Male
-Mirriam is Female
-
+Mary is Female John is Male Mirriam is Female
 ```
 
 **While Loop**
@@ -544,6 +541,8 @@ do{
 
 > Draw a flow chart for Do while loop
 
+---
+
 example
 
 ```php
@@ -563,9 +562,3 @@ while($i < 9);
 ?>
 
 ```
-
-
-
-
-
-
