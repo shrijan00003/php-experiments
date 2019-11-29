@@ -2,6 +2,8 @@
 
 # server side programming basics
 
+*You can get your pdf notes on* https://drive.google.com/drive/folders/1zpD7q0HS10xG6U2Qf9cmfkMziK-VynxT?usp=sharing
+
 > what is server side scripting?
 
 - A script is a set of programming instructions that is interpreted at runtime.
