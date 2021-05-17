@@ -1,5 +1,6 @@
 <?php
-    define('PI', 3.14);
+    // we will write code here
+    echo "We are here. ";
 
 
 
